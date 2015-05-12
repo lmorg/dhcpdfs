@@ -1,0 +1,16 @@
+###########################
+# INSTALL GUIDE and USAGE #
+###########################
+
+# Install Guide:
+GOFUSE=github.com/hanwen/go-fuse
+go get $GOFUSE
+cd $GOPATH/src/$GOFUSE
+bash all.bash
+
+go get github.com/lmorg/dhcpdfs
+go install github.com/lmorg/dhcpdfs
+
+# Example usage (FreeBSD):
+mkdir ~/dhcpdfs
+$GOPATH/bin/dhcpdfs -m ~/dhcpdfs -l /var/db/dhcpd/dhcpd.leases

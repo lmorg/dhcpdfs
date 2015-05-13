@@ -1,9 +1,8 @@
 # dhcpdfs
 DHCP as a file system (requires FUSE)
 
-This was cobbled together over a couple of afternoons to teach myself FUSE.
-While I do run it on a FreeBSD home server, lacking features I'd expect a
-production-ready fork would include:
+This was cobbled together over a couple of afternoons to teach myself FUSE. While I do run
+it on a home server, lacking features I'd expect a production-ready fork would include:
 * caching the dhcpd lease file (or better yet, the objects created from it)
 * support reading from multiple lease files
 * better handle duplicated entries on the lease file (eg update rather than overwrite)

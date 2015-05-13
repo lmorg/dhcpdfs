@@ -23,7 +23,7 @@ I may well add these features myself - if and when I get time, or there becomes 
 
 (dhcpdfs was written in Go but uses cgo, which may affect your ability to cross-compile)
     
-### Example usage (FreeBSD):
+### Example usage:
 
     mkdir ~/dhcpdfs
     $GOPATH/bin/dhcpdfs -m ~/dhcpdfs -l /var/db/dhcpd/dhcpd.leases
